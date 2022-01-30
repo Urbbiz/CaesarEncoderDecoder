@@ -7,31 +7,18 @@ namespace CaesarEncoderDecoderUnitTests
     public class InputValidationTests
     {
         [Theory]
-        [InlineData("12")]
-        [InlineData("0")]
-        [InlineData("25")]
-        public void TestIsOnlyNumberRange0To25_IsTrue(string input)
+        [InlineData("12", true)]
+        [InlineData("0", true)]
+        [InlineData("26", false)]
+        [InlineData("Test", false)]
+        public void TestIsOnlyNumberRange0To25_ReturnsExpectedValue(string input, bool resultValue)
         {
             //Arrange
             var inputValidation = new InputValidation();
             //Act
             var result = inputValidation.IsOnlyNumberRange0To25(input);
             //Assert
-            result.Should().BeTrue();
-        }
-
-        [Theory]
-        [InlineData("Test")]
-        [InlineData("26")]
-        [InlineData("-1!")]
-        public void TestIsOnlyNumberRange0To25_IsFalse(string input)
-        {
-            //Arrange
-            var inputValidation = new InputValidation();
-            //Act
-            var result = inputValidation.IsOnlyNumberRange0To25(input);
-            //Assert
-            result.Should().BeFalse();
+            result.Should().Be(resultValue);
         }
     }
 }

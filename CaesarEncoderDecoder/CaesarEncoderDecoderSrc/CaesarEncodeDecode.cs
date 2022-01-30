@@ -56,9 +56,9 @@ namespace CaesarEncoderDecoder.CaesarEncoderDecoderSrc
 
             string decodeString = _caesarCipherService.GetDecodedString(encodeString, key);
 
-            _output.GetOutputMessage(Message.DecodeString + encodeString);
+            _output.GetOutputMessage(Message.EncodeString + encodeString);
 
-            _output.GetOutputMessage(Message.EncodeString + decodeString);
+            _output.GetOutputMessage(Message.DecodeString + decodeString);
 
         }
     }
