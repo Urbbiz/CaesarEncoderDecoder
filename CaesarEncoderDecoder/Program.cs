@@ -15,4 +15,5 @@ var CaesarChiperService = new CaesarChiperService();
 
 var CaesarEncodeDecode = new CaesarEncodeDecode(Input, Output, InputValidation, CaesarChiperService);
 
-CaesarEncodeDecode.Run();
+//Console.WriteLine (CaesarEncodeDecode.Run());
+CaesarEncodeDecode.Run()

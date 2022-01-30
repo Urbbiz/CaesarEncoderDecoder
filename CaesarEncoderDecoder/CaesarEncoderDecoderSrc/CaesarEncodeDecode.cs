@@ -59,6 +59,7 @@ namespace CaesarEncoderDecoder.CaesarEncoderDecoderSrc
             _output.GetOutputMessage(Message.DecodeString + encodeString);
 
             _output.GetOutputMessage(Message.EncodeString + decodeString);
+
         }
     }
 }
