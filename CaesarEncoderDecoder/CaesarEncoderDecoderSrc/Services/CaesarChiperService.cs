@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CaesarEncoderDecoder.CaesarEncoderDecoderSrc.Services
 {
-    public class CaesarChiperService
+    public class CaesarChiperService : ICaesarChiperService
     {
         public string GetEncodedString(string input, int key)
         {
