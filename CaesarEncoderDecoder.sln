@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarEncoderDecoder", "CaesarEncoderDecoder\CaesarEncoderDecoder.csproj", "{98D6859E-5AE8-468D-A016-1340D17C77B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarEncoderDecoderUnitTests", "CaesarEncoderDecoderUnitTests\CaesarEncoderDecoderUnitTests.csproj", "{696CB069-65B2-4AEA-84F3-C18321956204}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{98D6859E-5AE8-468D-A016-1340D17C77B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98D6859E-5AE8-468D-A016-1340D17C77B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98D6859E-5AE8-468D-A016-1340D17C77B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696CB069-65B2-4AEA-84F3-C18321956204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696CB069-65B2-4AEA-84F3-C18321956204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696CB069-65B2-4AEA-84F3-C18321956204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696CB069-65B2-4AEA-84F3-C18321956204}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
