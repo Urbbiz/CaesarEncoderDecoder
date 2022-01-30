@@ -13,10 +13,10 @@ namespace CaesarEncoderDecoder.CaesarEncoderDecoderSrc
 
         private readonly IInputValidation _inputValidation;
 
-        private readonly ICaesarChiperService _caesarChiperService;
+        private readonly ICaesarCipherService _caesarCipherService;
 
         public CaesarEncodeDecode( IInput input, IOutput output, IInputValidation inputValidation,
-        ICaesarChiperService caesarChiperService)
+        ICaesarCipherService caesarChiperService)
         {
             _input = input;
 
@@ -24,7 +24,7 @@ namespace CaesarEncoderDecoder.CaesarEncoderDecoderSrc
 
             _inputValidation = inputValidation;
 
-            _caesarChiperService = caesarChiperService;
+            _caesarCipherService = caesarChiperService;
         }
 
         public void Run()
@@ -52,9 +52,9 @@ namespace CaesarEncoderDecoder.CaesarEncoderDecoderSrc
 
             int key = Int32.Parse(keyString);
 
-            string encodeString = _caesarChiperService.GetEncodedString(text, key);
+            string encodeString = _caesarCipherService.GetEncodedString(text, key);
 
-            string decodeString = _caesarChiperService.GetDecodedString(encodeString, key);
+            string decodeString = _caesarCipherService.GetDecodedString(encodeString, key);
 
             _output.GetOutputMessage(Message.DecodeString + encodeString);
 

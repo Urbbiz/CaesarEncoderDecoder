@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CaesarEncoderDecoder.CaesarEncoderDecoderSrc.Services
+﻿namespace CaesarEncoderDecoder.CaesarEncoderDecoderSrc.Services
 {
-    public class CaesarChiperService : ICaesarChiperService
+    public class CaesarCipherService : ICaesarCipherService
     {
         public string GetEncodedString(string input, int key)
         {

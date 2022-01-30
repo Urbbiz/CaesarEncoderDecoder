@@ -1,15 +1,10 @@
 ﻿using CaesarEncoderDecoder.CaesarEncoderDecoderSrc.Services;
 using FluentAssertions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace CaesarEncoderDecoderUnitTests
 {
-    public class CaesarChiperServiceTests
+    public class CaesarCipherServiceTests
     {
 
         [Theory]
@@ -18,9 +13,9 @@ namespace CaesarEncoderDecoderUnitTests
         public void TestGetDecodedString_isDecoding(string encodedString, int key, string decodedString)
         {
             //Arrange
-            var caesarChiperService = new CaesarChiperService();
+            var caesarCipherService = new CaesarCipherService();
             //Act
-            var result = caesarChiperService.GetDecodedString(encodedString, key);
+            var result = caesarCipherService.GetDecodedString(encodedString, key);
             //Assert
             result.Should().Be(decodedString);
         }
@@ -31,7 +26,7 @@ namespace CaesarEncoderDecoderUnitTests
         public void TestGetEncodedString_isEncoding(string inputString, int key, string encodedString)
         {
             //Arrange
-            var caesarChiperService = new CaesarChiperService();
+            var caesarChiperService = new CaesarCipherService();
             //Act
             var result = caesarChiperService.GetEncodedString(inputString, key);
             //Assert

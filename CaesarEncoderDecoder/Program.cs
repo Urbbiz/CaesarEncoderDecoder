@@ -11,9 +11,9 @@ var Output = new Output(ConsoleIO);
 
 var InputValidation = new InputValidation();
 
-var CaesarChiperService = new CaesarChiperService();
+var CaesarChiperService = new CaesarCipherService();
 
 var CaesarEncodeDecode = new CaesarEncodeDecode(Input, Output, InputValidation, CaesarChiperService);
 
 //Console.WriteLine (CaesarEncodeDecode.Run());
-CaesarEncodeDecode.Run()
+CaesarEncodeDecode.Run();

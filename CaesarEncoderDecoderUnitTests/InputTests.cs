@@ -1,11 +1,6 @@
 ﻿using CaesarEncoderDecoder.CaesarEncoderDecoderSrc.IO;
 using FluentAssertions;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace CaesarEncoderDecoderUnitTests
@@ -25,10 +20,10 @@ namespace CaesarEncoderDecoderUnitTests
             var input = new Input(mockConsoleIO.Object);
 
             //act
-            input.GetInputString();
+            var result = input.GetInputString();
 
             //assert
-            input.GetInputString().Should().Be("Test string");
+            result.Should().Be("Test string");
 
 
         }
